@@ -1,0 +1,6 @@
+<scroll-view scroll-y class='taskscroll'>
+  <view class='taskItem'>
+      <view>班级任务001</view>
+      <view>2019-12-12</view>
+  </view>
+</scroll-view>

@@ -1,0 +1,8 @@
+<!--pages/component/comTaskList.wxml-->
+<!-- <text>pages/component/comTaskList.wxml</text> -->
+  <scroll-view scroll-y class='taskscroll' bindscrolltoupper="upper" bindscrolltolower="lower">
+  <view class='taskItem' wx:for="{{taskquestion}}" data-TeacherTaskId="{{items.TeacherTaskId}}"  id="{{items.SubjectId}}" wx:for-item="items" catchtap="taskDetail">
+      <view id="{{items.SubjectId}}" data-TeacherTaskId="{{items.TeacherTaskId}}">{{items.name}}</view>
+      <view id="{{items.SubjectId}}" data-TeacherTaskId="{{items.TeacherTaskId}}">{{items.time}}</view>
+  </view>
+</scroll-view>

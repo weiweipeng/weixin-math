@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "questionList": "../component/comTaskList",
+    "pickerClass": "../component/pickerClass"
+  }
+}

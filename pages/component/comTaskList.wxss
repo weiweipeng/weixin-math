@@ -1,0 +1,22 @@
+/* pages/component/comTaskList.wxss */
+.taskscroll{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+  height: 80vh;
+}
+.taskItem{
+  border-bottom: 1rpx solid #f0f0f0;
+  background-color: #fff;
+  height: 120rpx;
+  /* line-height: 70rpx; */
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.taskItem view{
+  height: 50rpx;
+  line-height: 50rpx;
+  z-index: 100;
+}

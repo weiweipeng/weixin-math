@@ -1,0 +1,8 @@
+<!--pages/taskResult/taskResult.wxml-->
+<!-- <text>pages/taskResult/taskResult.wxml</text> -->
+<view class='reaultContent'>
+  <pickerClass bind:pickerClassName="selectClass"></pickerClass>
+
+  <questionList taskquestion="{{taskquestion}}" bind:listLower="lower" bind:listUpper="upper" bind:listDetail="taskDetail"></questionList>
+
+</view>

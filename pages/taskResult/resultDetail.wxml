@@ -1,0 +1,29 @@
+<!--pages/taskResult/resultDetail.wxml-->
+<!-- <text>pages/taskResult/resultDetail.wxml</text> -->
+<scroll-view v-scroll>
+  <view class='table'>
+    <view class='header table_line'>
+      <view>姓名</view>
+      <view>总分</view>
+      <view>学生得分</view>
+      <view>得分率</view>
+      <view>用时</view>
+    </view>
+    <view class='tbody' wx:for="{{textList}}" wx:for-item="items">
+      <view wx:if="{{items.StudentScore !== null}}" class='table_line'>
+        <view>{{items.StudentName}}</view>
+        <view>{{items.TotalScore}}</view>
+        <view>{{items.StudentScore}}</view>
+        <view>{{items.scoreRate}}</view>
+        <view>{{items.StudentTime}}</view>
+      </view>
+      <view wx:else class='table_lines'>
+        <view class='table_name'>{{items.StudentName}}</view>
+        <!-- <view></view> -->
+        <!-- <view></view> -->
+        <view class='not_done'>未完成</view>
+        <!-- <view></view> -->
+      </view>
+    </view>
+  </view>
+</scroll-view>

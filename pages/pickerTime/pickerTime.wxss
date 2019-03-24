@@ -1,0 +1,21 @@
+/* pages/pickerTime/pickerTime.wxss */
+.viewItem{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  display: block;
+  width: 100%;
+  color: #999;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.picker>view{
+  height: 30rpx;
+  background-color: #fff;
+}
+.pickerAnswer{
+  float: right;
+}
+.picker{
+  padding: 0 30rpx;
+}

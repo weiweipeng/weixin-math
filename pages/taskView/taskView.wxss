@@ -1,0 +1,23 @@
+/* pages/taskView/taskView.wxss */
+.taskscroll{
+  background-color: #fff;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.taskItem{
+  border-bottom: 1rpx solid #f0f0f0;
+  height: 120rpx;
+  /* line-height: 70rpx; */
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  box-sizing: border-box
+}
+.taskItem view{
+  height: 50rpx;
+  line-height: 50rpx;
+}
+/* .taskItem::after{
+  right: 140rpx;
+  content: '\e583';
+} */

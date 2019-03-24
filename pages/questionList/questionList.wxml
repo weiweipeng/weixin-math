@@ -1,0 +1,13 @@
+<!--pages/questionList/questionList.wxml-->
+<!-- <text>pages/questionList/questionList.wxml</text> -->
+<view class='questionPage'>
+  <view class='questionTips'>Tips:最多只能选择四十道题哦！</view>
+  <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" upper-threshold="{{tops}}" lower-threshold="{{lowers}}" scroll-with-animation>
+  <checkbox-group class='questionList' bindchange="checkboxChange">
+    <view class='questionItem' wx:for="{{questionList}}">
+        <label>{{questionList[index].Title}}</label>
+        <checkbox class='queslistCheck' value="{{questionList[index].SubjectId}}" checked="{{questionList[index].checked}}"></checkbox>
+    </view>
+  </checkbox-group> 
+  </scroll-view>
+</view>

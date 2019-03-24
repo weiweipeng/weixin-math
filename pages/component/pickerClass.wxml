@@ -1,0 +1,10 @@
+<!--pages/component/pickerClass.wxml-->
+<!-- <text>pages/component/pickerClass.wxml</text> -->
+  <view class='tasklist'>
+    <picker range="{{classList}}" range-key="{{'name'}}" bindchange='selectClass'>
+    <view class='picker'>
+      选择班级：
+      <label  class='pickerAnswer' wx:key="*this">{{classList[index].name}}</label>
+    </view>
+    </picker>
+  </view>

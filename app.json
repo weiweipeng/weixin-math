@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/taskList/taskList",
+    "pages/classList/classList",
+    "pages/questionList/questionList",
+    "pages/pickerTime/pickerTime",
+    "pages/taskList/taskDetail",
+    "pages/taskResult/taskResult",
+    "pages/taskResult/resultDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "阅读宝",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "布置作业",
+        "iconPath": "resource/img/Index.png",
+        "selectedIconPath": "resource/img/selectIndex.png"
+      },
+      {
+        "pagePath": "pages/taskList/taskList",
+        "text": "任务列表"
+      },
+      {
+        "pagePath": "pages/taskResult/taskResult",
+        "text": "成绩查询"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#5FB878",
+    "color": "#333"
+  }
+}

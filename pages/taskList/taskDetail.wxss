@@ -1,0 +1,14 @@
+/* pages/taskList/taskDetail.wxss */
+.detailCOntent{
+  background-color: #fff;
+
+}
+.detailCOntent view{
+  line-height: 100rpx;
+  font-size: 34rpx;
+  border-bottom: 1px solid #f0f0f0;
+  padding-left: 40rpx;
+  /* padding-right: 60rpx; */
+  color: #999;
+  /* text-align: right */
+}

@@ -1,0 +1,8 @@
+ <view class='viewItem'>
+    <picker mode="multiSelector" bindchange="bindTimeChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class='picker'>
+      选择时间:
+      <label class='pickerAnswer'>{{checkTime}}</label>
+      </view>
+    </picker>
+  </view>

@@ -1,0 +1,14 @@
+<!--pages/classList/classList.wxml-->
+<!-- <text>pages/classList/classList.wxml</text> -->
+<view class='classContain'>
+  <view class='classPractice'>
+    <checkbox-group bindchange="checkboxChange">
+      <view class="checkbox" wx:key="{{classArray[index].checked}}" wx:for="{{classArray}}">
+        <label>{{classArray[index].name}}</label>
+        <checkbox value="{{classArray[index].name}}" checked="{{classArray[index].checked}}" />
+        
+      </view>
+    </checkbox-group>
+  </view>
+  <view class='personPractice'></view>
+</view>

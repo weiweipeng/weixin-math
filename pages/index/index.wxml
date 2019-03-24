@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y='true'>
+      <view class="viewItem">
+    <picker bindchange="selectGrade" range-key="{{'text'}}" range="{{array}}">
+      <view class="picker">
+        选择年级：
+        <label class='pickerAnswer' wx:key="array[index].text">{{array[index].text}}</label>
+      </view>
+    </picker>
+  </view>
+  <view class="viewItem">
+      <picker bindchange="selectType" range="{{typeArray}}" range-key="{{'text'}}">
+    <view class='picker'>
+     选择练习类型：
+      <label class='pickerAnswer' wx:key="typeArray[sindex].text">{{typeArray[sindex].text}}</label>
+    </view>
+    </picker>
+  </view>
+  <view class="viewItem" bindtap='toclasses'>
+    <view class='picker'>
+     选择班级：
+      <label wx:if="{{checkClasses.length === 0}}" class='pickerAnswer' wx:key="typeArray[index].text">{{initStatus}}</label>
+      <label  wx:for="{{checkClasses}}" wx:for-item="itemName">
+        {{itemName}}
+      </label>
+    </view>
+  </view>
+  <view class="viewItem" >
+    <picker bindchange="selectBigKonw" range="{{jsonsBigData}}" range-key="{{'text'}}">
+      <view class="picker">
+        选择大知识点：
+        <label class="pickerAnswer" wx:key="*this" >{{jsonsBigData[bindex].text}}</label>
+      </view>
+      </picker>
+  </view>
+  <view class='viewItem'>
+    <picker bindchange='selectSmallKonw' range="{{jsonsSmallData}}" range-key="{{'text'}}">
+      <view class='picker'>
+        选择小知识点：
+        <label class='pickerAnswer' wx:key="*this">{{jsonsSmallData[mindex].text}}</label>
+      </view>
+    </picker>
+  </view>
+  <view class='viewItem'>
+    <picker bindchange='selectDifficult' range='{{difficultArr}}' range-key="{{'text'}}">
+      <view class='picker'>
+        选择难度：
+        <label class='pickerAnswer' wx:key="*this">{{difficultArr[dindex].text}}</label>
+      </view>
+    </picker>
+  </view>
+  <view class='viewItem'>
+    <view class='picker' bindtap='selectQuestion'>
+      选择题目：
+      <label class='pickerAnswer'>{{quesnum}}</label>
+    </view>
+  </view>
+  <view class='viewItem'>
+    <picker     mode="date"
+    value="{{date}}"
+    start="2015-09-01"
+    end="2017-09-01"
+    bindchange="bindTimeChange">
+    <view class='picker'>
+      选择时间:
+      <label class='pickerAnswer'>{{checkTime}}</label>
+      </view>
+    </picker>
+  </view>
+  <button bindtap="submits" type="primary">提交</button>
+  <!-- <pickerTime></pickerTime> -->
+  </scroll-view>
+</view>

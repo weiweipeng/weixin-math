@@ -1,0 +1,5 @@
+<!--pages/taskList/taskDetail.wxml-->
+<!-- <text>pages/taskList/taskDetail.wxml</text> -->
+<scroll-view scroll-y class='detailCOntent' wx:for="{{detailList}}" wx:for-item="item">
+  <view>{{item.Title}}</view>
+</scroll-view>
